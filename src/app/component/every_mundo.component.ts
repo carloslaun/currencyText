@@ -10,6 +10,12 @@ import { Component, OnInit } from '@angular/core';
 export class Everymundo implements OnInit{
     entrada: number = 0;
 
+    onTextboxInput(event:any){
+        this.entrada = event.target.value;
+
+
+    }
+
   
     constructor(){
  

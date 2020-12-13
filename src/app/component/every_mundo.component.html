@@ -1,15 +1,16 @@
 
     <h1>Value in every market</h1>
 
-    <input type="text" [value]="entrada" (keyup.enter)="entrada=$event.target.value" >
+    <input (keyup.enter) = "onTextboxInput($event)">
+
     <br>
     <br>
 
 
-            <div id='us'>United States: {{entrada | currency:"USD $"}}</div>
-            <div id='arg'>Argentina: USD ${{entrada| number:0}}</div>
-            <div id='spn'>Spain: EUR {{entrada}}€</div>
-            <div id='ger'>Germany: EUR €{{entrada}}</div> 
+            United States: {{entrada | currency:"USD $"}}<br>
+            Argentina: USD ${{entrada}}<br>
+            Spain: EUR {{entrada}}€<br>
+            Germany: EUR €{{entrada}}<br>
 
 
 
