@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "Everymundo1"
+  "defaultProject": "Everymundo1",
+  "cli": {
+    "analytics": "6321f378-0367-4b9c-af5f-d245160ef316"
+  }
 }
