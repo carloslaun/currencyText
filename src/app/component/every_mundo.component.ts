@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
 
 export class Everymundo{
     constructor(){
-        console.log('mi componente cargado');
+        console.log("mi componente cargado");
     }
 
 
