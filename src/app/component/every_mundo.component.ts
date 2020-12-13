@@ -1,17 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'every_mundo',
-    template: `
-
-    `
+    templateUrl: 'every_mundo.component.html'
 
 })
 
-export class Everymundo{
+
+export class Everymundo implements OnInit{
+    entrada: number = 0;
+
+  
     constructor(){
-        console.log("mi componente cargado");
+ 
     }
+    ngOnInit(): void{
+    }
+
+
 
 
 }
