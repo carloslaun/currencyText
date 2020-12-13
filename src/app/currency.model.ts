@@ -1,6 +1,7 @@
 export class currency{
     constructor(
-        public money:number
+        public id:number,
+        public coin:number
 
     ){
 
