@@ -3,8 +3,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'every_mundo',
     template: `
-         <h1> hola mundo </h1>
-    
+
     `
 
 })
