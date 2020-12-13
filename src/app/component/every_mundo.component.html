@@ -1,13 +1,13 @@
 
     <h1>Value in every market</h1>
 
-    <input type="text" [value]="entrada" >
+    <input type="text" [value]="entrada" (keyup.enter)="entrada=$event.target.value" >
     <br>
     <br>
 
 
             <div id='us'>United States: {{entrada | currency:"USD $"}}</div>
-            <div id='arg'>Argentina: USD ${{entrada}}</div>
+            <div id='arg'>Argentina: USD ${{entrada| number:0}}</div>
             <div id='spn'>Spain: EUR {{entrada}}€</div>
             <div id='ger'>Germany: EUR €{{entrada}}</div> 
 
