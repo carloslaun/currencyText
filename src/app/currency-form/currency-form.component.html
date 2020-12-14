@@ -35,7 +35,7 @@
                                         <th>{{ money.id }}</th>
                                         <th>United States: {{money.value | currency:"USD $"}}</th>
                                         <th>Argentina: USD ${{money.arg}}</th>
-                                        <th>Spain: EUR {{money.spn}}€</th>
+                                        <th>Spain: EUR {{money.spn | number}}€</th>
                                         <th>Germany: EUR €{{money.ger}}</th>
 
                                     </li>

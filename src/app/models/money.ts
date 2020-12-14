@@ -3,7 +3,7 @@ export class Money {
     value:number = 0;
     arg:number= 0;
     spn:number= 0;
-    ger:number= 0;
+    ger:string = '';
 
 
 }
