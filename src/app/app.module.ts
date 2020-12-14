@@ -8,6 +8,7 @@ import { CurrencyFormComponent } from './currency-form/currency-form.component';
 import { DatatableComponent } from './component/datatable/datatable.component';
 import { DataTablesModule } from 'angular-datatables';
 
+
 @NgModule({
   declarations: [
     AppComponent,
