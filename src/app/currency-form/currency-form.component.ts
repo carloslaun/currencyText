@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Money } from '../models/money';
 
 @Component({
@@ -6,7 +6,8 @@ import { Money } from '../models/money';
   templateUrl: './currency-form.component.html',
   styleUrls: ['./currency-form.component.css']
 })
-export class CurrencyFormComponent implements OnInit {
+
+export class CurrencyFormComponent {
 
   moneyArray: Money[]= [
     {id:1, value:100, arg:8215, spn:83, ger:83 }
@@ -18,8 +19,13 @@ export class CurrencyFormComponent implements OnInit {
     this.selectedMoney.id = this.moneyArray.length + 1;
     this.selectedMoney.arg = Math.round(this.selectedMoney.value * 82.15);
     this.selectedMoney.spn = Math.round(this.selectedMoney.value * 0.83);
+
+
     this.selectedMoney.ger = Math.round(this.selectedMoney.value * 0.83);
+ 
+
     this.moneyArray.push(this.selectedMoney)
+    
 
     this.selectedMoney = new Money();
 
@@ -34,10 +40,10 @@ export class CurrencyFormComponent implements OnInit {
 
 
 
+
   constructor() { }
 
-  ngOnInit(): void {
-  }
+ 
 
 
 
