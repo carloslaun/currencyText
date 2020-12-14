@@ -24,6 +24,12 @@ export class CurrencyFormComponent implements OnInit {
     this.selectedMoney = new Money();
 
   }
+  delete(){
+    this.moneyArray = this.moneyArray.filter(x => x != this.selectedMoney);
+    this.selectedMoney = new Money();
+
+
+  }
 
 
 
